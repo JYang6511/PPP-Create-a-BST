@@ -95,7 +95,10 @@ class BST:
 """
 Part 3: Add functionality to your BST class
 """
-
+def add(self,node):
+  #data wrong type
+  if type(node) != int and type(node) != BSTNode:
+    raise ValueError("You must pass an int or a BSTNode")
 
 """
 If the tree is empty (root points to None), put the new node at the top of the tree.
